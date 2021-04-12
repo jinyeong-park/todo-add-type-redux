@@ -9,13 +9,18 @@ export const NewTodoInput:React.FC<NewTodoInputProps> = ({ addTodo }) => {
   const [deadline, setDeadline] = React.useState(0)
 
   const changeHandler:React.ChangeEventHandler<HTMLInputElement> = (event) => {
-    setTodo(event.target.value)
+    if (event.target.name === 'todo') {
+      setTodo(event.target.value)
+    } else {
+      setDeadline(Number(event.target.value))
+    }
+
   }
 
   return (
     <div>
-      <input type='text' value={todo} onChange={changeHandler} placeholder='Write todo...' />
-      <input type='number' value={todo} onChange={changeHandler} placeholder='Deadline...' />
+      <input type='text' value={todo} name='todo' onChange={changeHandler} placeholder='Write todo...' />
+      <input type='number' value={deadline} name='deadline' onChange={changeHandler} placeholder='Deadline...' />
       <button>Add Todo task</button>
     </div>
   )
