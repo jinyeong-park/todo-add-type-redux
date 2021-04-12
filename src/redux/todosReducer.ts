@@ -12,6 +12,7 @@ const initialState = {
   todos: []
 }
 
+type Action = {type: "ADD_TODO", payload: string}
 
 export const todosReducer = (state, action) => {
 
