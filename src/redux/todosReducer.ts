@@ -4,7 +4,7 @@
 // action:
 
 // define type of our state
-interface TodosState {
+export interface TodosState {
   todos: string[]
 }
 
