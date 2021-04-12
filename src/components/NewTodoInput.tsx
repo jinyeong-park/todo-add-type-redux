@@ -5,6 +5,8 @@ interface NewTodoInputProps {
 }
 
 export const NewTodoInput:React.FC<NewTodoInputProps> = ({ addTodo }) => {
+  const [todo, setTodo] = React.useState("")
+
   return (
     <div>
       <input type='text' placeholder='Write todo...' />
