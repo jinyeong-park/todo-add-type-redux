@@ -7,7 +7,8 @@ import { TodosState } from '../redux/todosReducer';
 function App() {
   const addTodo = () => {
     // bring state from redux using useSelector hooks
-    const todos = useSelector<TodosState>((state) => state.todos)
+    // useSelector<Type, return type of useSelector>
+    const todos = useSelector<TodosState, TodosState["todos"]>((state) => state.todos)
 
   }
 
