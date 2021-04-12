@@ -4,7 +4,7 @@ interface NewTodoInputProps {
   addTodo(todo:string): void;
 }
 
-export const NewTodoInput:React.FC<NewTodoInputProps> = () => {
+export const NewTodoInput:React.FC<NewTodoInputProps> = ({ addTodo }) => {
   return (
     <div>
       <input type='text' placeholder='Write todo...' />
