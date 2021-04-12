@@ -14,6 +14,6 @@ const initialState = {
 
 type Action = {type: "ADD_TODO", payload: string}
 
-export const todosReducer = (state, action) => {
+export const todosReducer = (state:TodosState = initialState, action: Action) => {
 
 }
