@@ -29,6 +29,10 @@ export const NewTodoInput:React.FC<NewTodoInputProps> = ({ addTodo }) => {
   // callback for onClick
   const AddTodoClick= (event: React.MouseEvent) => {
     event.preventDefault()
+    addTodo(todo)
+
+    setTodo("")
+    setDeadline(0)
 
   }
 

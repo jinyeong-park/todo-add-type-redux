@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <NewTodoInput addTodo={addTodo}/>
+      <NewTodoInput addTodo={alert}/>
       <hr/>
       <ul>
         <li>Some Todo</li>
