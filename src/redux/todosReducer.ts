@@ -15,5 +15,12 @@ const initialState = {
 type Action = {type: "ADD_TODO", payload: string}
 
 export const todosReducer = (state:TodosState = initialState, action: Action) => {
+  // define action type
+  switch(action.type) {
+    case "ADD_TODO": {
+      // return new object (add new todos)
+      return {...state, todos: [...state.todos, action.payload]}
+    }
+  }
 
 }
