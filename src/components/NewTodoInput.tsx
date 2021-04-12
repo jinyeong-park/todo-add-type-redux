@@ -1,5 +1,9 @@
 import React from 'react';
 
+interface NewTodoInputProps {
+  addTodo(todo:string): void;
+}
+
 export const NewTodoInput = () => {
   return (
     <div>
