@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css';
-import { NewTodoInput } from './components/NewTodoInput';
+import '../App.css';
+import { NewTodoInput } from './NewTodoInput';
 
 function App() {
   const addTodo = () => {
