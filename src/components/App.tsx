@@ -4,6 +4,8 @@ import { NewTodoInput } from './NewTodoInput';
 
 function App() {
   const addTodo = () => {
+    // bring state from redux using useSelector hooks
+    const todos = useSelector<>((state) => state.todos)
 
   }
 
