@@ -21,6 +21,9 @@ export const todosReducer = (state:TodosState = initialState, action: Action) =>
       // return new object (add new todos)
       return {...state, todos: [...state.todos, action.payload]}
     }
+    // if you receive any other action type, just return state without any change
+    default:
+      return state
   }
 
 }
